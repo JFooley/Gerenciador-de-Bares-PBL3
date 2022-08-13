@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="325.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CRUD.cardapio.EditarCardapioController">
+   <children>
+      <VBox alignment="CENTER" layoutX="20.0" layoutY="13.0" prefHeight="299.0" prefWidth="163.0" spacing="8.0">
+         <children>
+            <Text fx:id="Mensagem" strokeType="OUTSIDE" strokeWidth="0.0" text="Erro!" visible="false" />
+            <VBox alignment="CENTER_LEFT" prefHeight="46.0" prefWidth="163.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" />
+                  <TextField fx:id="NomeTextField" promptText="Digite o nome" styleClass="button1" stylesheets="@../../../controller/fullpackstyling.css" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="163.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Categoria" />
+                  <TextField fx:id="CategoriaTextField" promptText="Digite a categoria" styleClass="button1" stylesheets="@../../../controller/fullpackstyling.css" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="163.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Preço" />
+                  <TextField fx:id="PrecoTextField" promptText="Digite o preço" styleClass="button1" stylesheets="@../../../controller/fullpackstyling.css" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="163.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição" />
+                  <TextArea fx:id="DescricaoTextArea" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+            <Button fx:id="ContinuarButton" mnemonicParsing="false" onAction="#ContinuarButtonAction" styleClass="button4" stylesheets="@../../../controller/fullpackstyling.css" text="Escolher novos produtos" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="ManterButton" mnemonicParsing="false" onAction="#ManterButtonAction" styleClass="button4" stylesheets="@../../../controller/fullpackstyling.css" text="Manter produtos antigos" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
